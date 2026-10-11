@@ -1,0 +1,48 @@
+{
+  "name": "titanhold-quality-gate",
+  "version": "0.1.0",
+  "description": "Payment-release gate for AI-generated images/video: local vision-model QC (extra fingers, garbled text, wrong car doors, physics) + ERC-8004 agent identity/reputation check on Arc before USDC is released. Prototype by TITANHOLD.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "cli": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "erc-8004",
+    "arc",
+    "usdc",
+    "ai-agents",
+    "quality-control",
+    "ollama",
+    "vision",
+    "escrow"
+  ],
+  "author": "TITANHOLD (https://titanhold.app)",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.57.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "titanhold-quality-gate": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wolkodaww123-ctrl/titanhold-quality-gate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
